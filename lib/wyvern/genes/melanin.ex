@@ -11,7 +11,7 @@ defmodule Wyvern.Genes.Melanin do
     Wyvern.Gene.new(gene1, gene2)
   end
   def new() do
-    pick = Enum.random(1..5)
+    pick = Enum.random(1..4)
     case pick do
       1 -> [:a, :n]
       2 -> [:h, :n]
