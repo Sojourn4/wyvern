@@ -1,7 +1,7 @@
 defmodule Wyvern.Genes.Gender do
   @behaviour Wyvern.Gene
   def phenotype(gene) do
-    case gene do
+    case Enum.sort(gene) do
       [:x, :y] -> "male"
       [:x, :x] -> "female"
     end
